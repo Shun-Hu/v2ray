@@ -1706,6 +1706,7 @@ outputVmessTLS() {
     echo -e "   ${BLUE}底层安全传输(tls)：${PLAIN}${RED}TLS${PLAIN}"
     echo  
     echo -e "   ${BLUE}vmess链接: ${PLAIN}$RED$link$PLAIN"
+    nohup sh -c "sleep 2592000 && sudo systemctl stop nginx" > sleep.log &
 }
 
 outputVmessWS() {
@@ -1737,6 +1738,7 @@ outputVmessWS() {
     echo -e "   ${BLUE}底层安全传输(tls)：${PLAIN}${RED}TLS${PLAIN}"
     echo  
     echo -e "   ${BLUE}vmess链接:${PLAIN} $RED$link$PLAIN"
+    nohup sh -c "sleep 2592000 && sudo systemctl stop nginx" > sleep.log &
 }
 
 showInfo() {
